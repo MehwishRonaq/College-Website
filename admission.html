@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPGC Women Mardan | Admission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="logo.webp" alt="GPGC Logo" class="logo">
+                <div class="brand-text">
+                    <span class="brand-name">Government Post Graduate College For Women Mardan</span>
+                    <span class="brand-tagline">Empowering Women, Building Futures</span>
+                </div>
+            </a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a class="active" href="admission.html">Admission</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <header class="admission-header reveal">
+            <h1>Admission Application</h1>
+            <p>Apply today to join our community of academic excellence and leadership.</p>
+        </header>
+
+        <section class="panel reveal" style="animation-delay: 0.2s;">
+            <h2>Student Information</h2>
+            <form id="admissionForm" class="styled-form">
+                <div class="admission-grid">
+                    <div>
+                        <label for="fullName">Full Name</label>
+                        <input id="fullName" name="fullName" type="text" placeholder="e.g. Ayesha Khan" required>
+                    </div>
+
+                    <div>
+                        <label for="fatherName">Father/Guardian Name</label>
+                        <input id="fatherName" name="fatherName" type="text" placeholder="Full name of guardian" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" placeholder="email@example.com" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" type="tel" placeholder="03xx-xxxxxxx" required>
+                    </div>
+
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <input id="dob" name="dob" type="date" required>
+                    </div>
+
+                    <div>
+                        <label for="course">Interested Program</label>
+                        <select id="course" name="course" required>
+                            <option value="">Select Program</option>
+                            <option>BS Computer Science</option>
+                            <option>BS Mathematics</option>
+                            <option>BBA (Business Administration)</option>
+                            <option>BS English</option>
+                            <option>BS Botany</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="matricMarks">Matric Marks (Total: 1100)</label>
+                        <input id="matricMarks" name="matricMarks" type="number" min="0" max="1100" required>
+                    </div>
+
+                    <div>
+                        <label for="interMarks">Intermediate Marks (Total: 1100)</label>
+                        <input id="interMarks" name="interMarks" type="number" min="0" max="1100" required>
+                    </div>
+
+                    <div class="full-width">
+                        <label for="address">Mailing Address</label>
+                        <textarea id="address" name="address" rows="3" placeholder="Street, City, District" required></textarea>
+                    </div>
+
+                    <div class="full-width">
+                        <label for="statement">Personal Statement</label>
+                        <textarea id="statement" name="statement" rows="3" placeholder="Tell us why you want to join GPGC Women Mardan" required></textarea>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <button type="submit" class="btn">Submit Application</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="logo.webp" alt="Logo" class="logo-footer">
+                    <p>Government Post Graduate College for Women Mardan is a premier institution dedicated to academic excellence and women's empowerment.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="admission.html">Admission</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <p>Mardan, KP, Pakistan</p>
+                    <p>info@gpgcwomardan.edu.pk</p>
+                    <p>0300-1234567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GPGC Women Mardan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('admissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Your application has been submitted successfully! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
